@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CoordinatorLayoutActivity">
+
+    <ImageView
+        android:id="@+id/imageAirplaneCordinator"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/imagem1" />
+
+    <ImageView
+        android:id="@+id/TowerImage"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/imagem3" />
+
+</android.support.design.widget.CoordinatorLayout>
