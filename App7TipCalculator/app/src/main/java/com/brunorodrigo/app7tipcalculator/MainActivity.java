@@ -27,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
         textTotal = findViewById(R.id.textTotal);
         seekTip = findViewById(R.id.seekTip);
 
-        //Controlar seekbar
         seekTip.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
@@ -58,11 +57,9 @@ public class MainActivity extends AppCompatActivity {
             typedValue = Double.parseDouble( editValue.getText().toString() );
         }
 
-        //calcula a gorjeta total
         double tip = typedValue * (porcentage /100);
         double total = tip + typedValue;
 
-        //exibe a gorjeta total
         textTip.setText("R$ " + Math.round(tip) );
         textTotal.setText("R$ " + total);
 
